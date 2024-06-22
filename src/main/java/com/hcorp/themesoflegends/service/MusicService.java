@@ -14,7 +14,7 @@ public class MusicService {
     public MusicService() {
         //TODO MOCK BDD
         MusicStorageService musicStorageService = new MusicStorageService();
-        this.musics = musicStorageService.getMusics();
+        this.musics = musicStorageService.fetchMusicFromDatabase();
     }
 
     public List<MusicDto> getAllMusics() {
